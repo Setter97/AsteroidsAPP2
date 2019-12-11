@@ -1,0 +1,34 @@
+
+<resources>
+    <string name="app_name">Aplicacio4</string>
+    <string name="text_aplicacio">Aplication</string>
+    <string name="botonJugar">Play</string>
+    <string name="botonConfig">Config</string>
+    <string name="botonAcerca">About</string>
+    <string name="botonSalir">Exit</string>
+    <string name="textAcerca">
+This application has been developed as an example in the Web Interface Design module to demonstrate how new activities can be launched from the main activity</string>
+    <string name="pa_key">preferencies_principal</string>
+
+    <string name="pa1_key">musica</string>
+    <string name="pa1_title">Play music</string>
+    <string name="pa1_summary">Play music in background</string>
+
+    <string name="pa2_key">graficos</string>
+    <string name="pa2_title">Type of graphics</string>
+    <string name="pa2_summary">The graphics representation is chosen</string>
+
+    <string name="pa3_key">fragmentos</string>
+    <string name="pa3_title">Number of fragments</string>
+    <string name="pa3_summary">In how many pieces an asteroid is divided</string>
+
+    <string name="pa4_key">activa_multijugador</string>
+    <string name="pa4_title">Activiar modo multijugador</string>
+
+    <string name="pa5_key">max_jugadores</string>
+    <string name="pa5_title">Maximo de jugadores</string>
+
+    <string name="pa6_key">tipus_con</string>
+    <string name="pa6_title">Tipo de conexion</string>
+
+</resources>

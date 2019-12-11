@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widthButons">200dp</dimen>
+    <dimen name="textButons">20sp</dimen>
+    <dimen name="sizeTitol">50sp</dimen>
+    <dimen name="paddingTextApp">20dp</dimen>
+</resources>

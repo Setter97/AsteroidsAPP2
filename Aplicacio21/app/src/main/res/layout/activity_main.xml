@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:gravity="center_vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_app_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="@dimen/paddingTextApp"
+        android:text="@string/text_aplicacio"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sizeTitol" />
+
+
+    <Button
+        android:id="@+id/btnjugar"
+        android:layout_width="@dimen/widthButons"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/text_app_id"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical"
+        android:text="@string/botonJugar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textButons" />
+
+    <Button
+        android:id="@+id/btnconf"
+        android:layout_width="@dimen/widthButons"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnjugar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonConfig"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textButons" />
+
+    <Button
+        android:id="@+id/btnacerca"
+        android:layout_width="@dimen/widthButons"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnconf"
+        android:layout_centerHorizontal="true"
+        android:text="@string/botonAcerca"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textButons" />
+
+    <Button
+        android:id="@+id/btnsalir"
+        android:layout_width="@dimen/widthButons"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnacerca"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/degradat"
+        android:text="@string/botonSalir"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="@dimen/textButons" />
+</RelativeLayout>
