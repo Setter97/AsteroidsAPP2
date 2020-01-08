@@ -31,6 +31,7 @@ public class AdaptadorPuntuacions extends RecyclerView.Adapter<AdaptadorPuntuaci
     public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView titol,subtitol;
         public ImageView icono;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             titol=(TextView)itemView.findViewById(R.id.titol);

@@ -18,11 +18,7 @@ public class PreferenciesFragment extends PreferenceFragment {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.preferencies);
 
-        //SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(getActivity()); //Uno
-
         final EditTextPreference fragmentos=(EditTextPreference)findPreference(getResources().getString(R.string.pa3_key));
-
-        //fragmentos.setSummary("En cuantos trozos se divide un asteroide ("+ Integer.parseInt(pref.getString(getString(R.string.pa3_key),"0")) +")");//dos
 
         fragmentos.setSummary(getResources().getString(R.string.pa3_summary)+"("+fragmentos.getText()+")");
 

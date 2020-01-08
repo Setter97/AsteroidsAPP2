@@ -315,7 +315,8 @@ public class VistaJoc extends View implements SensorEventListener {
 
         @Override
         public void run() {
-            while (true) {
+            corrent=true;
+            while (corrent) {
                 actualitzaFisica();
                 synchronized (this) {
                     while (pausa) {
@@ -346,4 +347,5 @@ public class VistaJoc extends View implements SensorEventListener {
                 this.getHeight()/Math.abs( missils.get(i).getIncY()))-2;
         missilActiu=true;
     }
+
 }
