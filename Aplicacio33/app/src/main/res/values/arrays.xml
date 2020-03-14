@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tipusGrafics">
+        <item>vector</item>
+        <item>bitmap</item>
+        <item>3D</item>
+    </string-array>
+    <string-array name="tipusGraficValors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="tipusCon">
+        <item>Bluetooth</item>
+        <item>Wi-Fi</item>
+        <item>Internet</item>
+    </string-array>
+
+    <string-array name="tipusConValors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="tipusMagatzem">
+        <item>Preferencies</item>
+        <item>Fitxer Intern</item>
+        <item>Fitxer Extern</item>
+        <item>SQLite</item>
+        <item>Content Provider</item>
+        <item>Socket</item>
+        <item>XML</item>
+        <item>Gson</item>
+        <item>Json</item>
+    </string-array>
+
+    <string-array name="tipusMagatzemValors">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+    </string-array>
+</resources>

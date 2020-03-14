@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <view
+        android:id="@+id/VistaJoc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.example.aplicacio1.VistaJoc"
+        android:focusable="true"
+        android:background="@drawable/fons"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Derrota"
+        android:background="#7F000000"
+        android:layout_gravity="center"
+        android:text="! Has perdut !"
+        android:textColorLink="#FF0000"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/Victoria"
+        android:background="#7F000000"
+        android:layout_gravity="center"
+        android:text="! Has guanyat !"
+        android:textColorLink="#FF0000"
+        android:textSize="35sp"
+        android:visibility="invisible"
+        />
+</FrameLayout>
