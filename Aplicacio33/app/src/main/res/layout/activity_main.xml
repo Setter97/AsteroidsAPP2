@@ -62,7 +62,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/btnacerca"
         android:layout_centerHorizontal="true"
-        android:background="@drawable/degradat"
         android:text="@string/botonSalir"
         android:textAlignment="center"
         android:textAllCaps="false"
