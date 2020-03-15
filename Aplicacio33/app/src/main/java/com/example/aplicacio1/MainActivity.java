@@ -18,6 +18,7 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button bConf;
     private Button bPlay;
 
+
     public static MagatzemPuntuacions magatzem;
 
 
@@ -35,11 +37,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        startService(new Intent(MainActivity.this,ServeiMusica.class));
+
 
         //Inicialitzacio del objecte magatzem;------------------------------------------------------
 
         SharedPreferences pref= PreferenceManager.getDefaultSharedPreferences(this);
+
+        boolean musica=pref.getBoolean("musica",false);
+        if(musica){
+            startService(new Intent(MainActivity.this,ServeiMusica.class));
+        }else{
+            stopService(new Intent(MainActivity.this,ServeiMusica.class));
+        }
         switch (pref.getString("tipus_mag","0")){
             case "0":magatzem=new MagatzemPuntuacionsPreferencies(this);break;
             case "1":magatzem=new MagatzemPuntuacionsFitxerIntern(this);break;
